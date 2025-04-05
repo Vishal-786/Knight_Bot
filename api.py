@@ -20,10 +20,7 @@ def chat_with_llama(user_input):
     }
 
     response = requests.post("https://openrouter.ai/api/v1/chat/completions", headers=headers, json=data)
-
-    st.write(response.status_code)
-    st.write(response.json())
-    
+     
     return response.json()["choices"][0]["message"]["content"]
 
 
