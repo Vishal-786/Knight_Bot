@@ -1,6 +1,5 @@
 import streamlit as st
 import requests
-import base64
 
 #connect with LLM Model
 # import requests
@@ -40,7 +39,7 @@ for msg in st.session_state.messages:
 # user_input
 user_input = st.chat_input("Type your chess question here...")
 
-# 👇 Once user enters input
+#  Once user enters input
 if user_input:
     
     # store  user_input
